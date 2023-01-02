@@ -52,6 +52,7 @@ anchor锚点参数，默认根据核的形状找到中心位置作为锚点，
 delta参数就是要不要在卷积之后加个偏移，默认加0，
 borderType就是边缘类型，可以填充黑边，或者对得到的边缘做个什么反转等，默认BORDER_REFLECT_101：边缘反射101，对称法，以最边缘像素为轴，对称填充
 '''
+
 kernel=kernel_sharpen2
 
 filter2D = cv2.filter2D(img, -1, kernel)
