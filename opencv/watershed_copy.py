@@ -94,8 +94,8 @@ def Watershed():
 
 if __name__ == '__main__':
     img = cv.imread('./14.png')
-    # cv.namedWindow('img', cv.WINDOW_NORMAL)
-    # cv.imshow('img', img)
+    cv.namedWindow('img', cv.WINDOW_NORMAL)
+    cv.imshow('img', img)
 
     ToBinary()  # 转二值图
     Watershed()  # 分水岭找边界
